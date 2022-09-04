@@ -1,0 +1,82 @@
+
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, 世界")
+
+	//Variables
+	var j int = 27
+	fmt.Printf("%v, %T", j, j)
+	fmt.Printf("\n")
+
+	var i int
+	i = 27
+	k := 28
+	fmt.Println(i, k)
+}
+
+
+
+
+
+// You can edit this code!
+// Click here and start typing.
+package main
+
+import (
+	"fmt"
+)
+
+var (
+	i int = 24
+)
+
+func main() {
+	fmt.Println(i)
+	fmt.Printf("%T", i)
+}
+
+
+
+//Scope to the package (lower case at the package level)
+// golabal variable (upper case at the package level)
+// block scope (inside to the function)
+
+
+// acro-name (UPPER CASE)
+var goggleHTTP String = "https://github.com/SabbirAhmedAdor629/GoLang/new/main"
+var myURL = "https://github.com/SabbirAhmedAdor629/GoLang/new/main"
+
+
+
+
+
+// You can edit this code!
+// Click here and start typing.
+package main
+
+import (
+	"fmt"
+)
+
+var (
+	i int = 24
+)
+
+func main() {
+	var j float32
+	j = float32(i)
+
+	fmt.Println(j)
+	fmt.Printf("%T", i)
+	fmt.Printf("\n")
+	fmt.Printf("%T", j)
+
+	var k string
+	k = stringconv.Itoa(j)
+	fmt.Println(j)
+
+}
+
