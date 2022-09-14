@@ -30,6 +30,19 @@ func main() {
 	fmt.Println(a >> 3)
 	
 	
+	//Unsigned Integer
+	// we are not allowed to add two integers of different types, we have might need help from type conversion
+	var n uint16 = 42
+	var m int = 4
+	fmt.Println(int(n) + m)
+	
+	//Complex numbers
+	var n complex64 = 2i
+	fmt.Printf("%v %T\n", n, n)
+	
+	
+	
+
 
 }
 
