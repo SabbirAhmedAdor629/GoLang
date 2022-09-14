@@ -45,9 +45,27 @@ func main() {
 	fmt.Printf("%v %T %T\n", m/n, n, m) //Division
 	fmt.Printf("%v %T %T\n", n*m, n, m) //Multiplication
 	
+	// Real and Imaginary Part
+	fmt.Printf("%v %T\n", real(n), real(n))
+	fmt.Printf("%v %T\n", real(m), real(m))
 	
 	
-
+	// String
+	s := "My name is Sabbir Ahmed"
+	fmt.Printf("%v, %T", string(s[1]), s)
+	
+	
+	// String concatination
+	s := "Alhamdulillah "
+	m := "Allah valo rakhsen"
+	fmt.Printf("%v, %T, %T\n", s+m, s, m)
+	
+	
+	// Coverting the string into bytes
+	s := "Alhamdulillah "
+	m := []byte(s)
+	fmt.Printf("%v, %T\n", m, m)
+	
 
 }
 
