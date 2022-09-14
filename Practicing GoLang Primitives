@@ -40,6 +40,11 @@ func main() {
 	var n complex64 = 2i
 	fmt.Printf("%v %T\n", n, n)
 	
+	fmt.Printf("%v %T %T\n", m+n, n, m) //Addition
+	fmt.Printf("%v %T %T\n", m-n, n, m) //Subtraction
+	fmt.Printf("%v %T %T\n", m/n, n, m) //Division
+	fmt.Printf("%v %T %T\n", n*m, n, m) //Multiplication
+	
 	
 	
 
