@@ -1,5 +1,71 @@
 // You can edit this code!
 // Click here and start typing.
+
+// default initialized value for go is 0
+// Bit Shifting operation for integers
+
+package main
+
+import "fmt"
+
+func main() {
+	a := 1 == 1
+	fmt.Printf("%v\n", a)
+
+	b := 10
+	//var c float32 = 15.5
+	//fmt.Printf("%v", b+int(c))
+
+	var c int = 10
+	var d int = 3
+
+	fmt.Println(c & d)  // and operator
+	fmt.Println(c | d)  // OR operator
+	fmt.Println(c ^ d)  // Exclusive OR operator
+	fmt.Println(c &^ d) // and not operator
+	
+	// Bit Shifting
+	a := 8
+	fmt.Println(a << 4)
+	fmt.Println(a >> 3)
+	
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// You can edit this code!
+// Click here and start typing.
 package main
 
 import "fmt"
