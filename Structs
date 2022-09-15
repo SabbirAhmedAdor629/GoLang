@@ -1,23 +1,27 @@
+
+// use case : if we want to stor different types of data element in a same collection then we use structs
+
+
 package main
 
 import "fmt"
 
 type Doctor struct {
-	number    int      // data type : integer
-	actorname string   // data type : string
-	companies []string // data type : slice
+	id    int      // data type : integer
+	name string   // data type : string
+	degrees []string // data type : slice
 }
 
 func main() {
-	aDoctor := Doctor{
-		number:    3,
-		actorname: "John Pertwee",
+	doctor_Muakkir := Doctor{
+		id:    3011146,
+		name: "Muakkir Ahmed Rabby",
 		companies: []string{
-			"Liz shaw",
-			"jo",
-			"sarah",
+			"MBBS",
+			"MS",
+			"FCPS",
 		},
 	}
 
-	fmt.Println(aDoctor)
+	fmt.Println(doctor_Muakkir)
 }
