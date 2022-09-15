@@ -1,0 +1,27 @@
+// You can edit this code!
+// Click here and start typing.
+package main
+
+import "fmt"
+
+func main() {
+	// Map
+	//statePopulations := make(map[string]int)   // for adding values afterwords not right now
+	sabbir := map[string]int{
+		"Sabbir": 143235234,
+		"ahmed":  337401937,
+	}
+
+	m := map[[3]int]string{}
+
+	sabbir["university"] = 2000000 // accessing elements using key
+
+	fmt.Println(sabbir)
+	fmt.Println(m)
+	fmt.Println(sabbir["university"])
+
+	// if we arent sure that the key is available at the map or not        
+	pop, ok := sabbir["ahmed"]
+	fmt.Println(pop, ok)
+
+}
