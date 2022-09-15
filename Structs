@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+type Doctor struct {
+	number    int      // data type : integer
+	actorname string   // data type : string
+	companies []string // data type : slice
+}
+
+func main() {
+	aDoctor := Doctor{
+		number:    3,
+		actorname: "John Pertwee",
+		companies: []string{
+			"Liz shaw",
+			"jo",
+			"sarah",
+		},
+	}
+
+	fmt.Println(aDoctor)
+}
