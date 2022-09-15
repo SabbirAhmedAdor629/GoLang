@@ -1,5 +1,40 @@
-// You can edit this code!
-// Click here and start typing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package main
+
+import "fmt"
+
+// one of the use case of enumerated constant (iota)
+
+const (
+	errorSpecialist = iota
+	catSpecialist
+	dogSpecialist
+	snakeSpecialist
+)
+
+func main() {
+	var specialistType int
+	fmt.Println(specialistType == catSpecialist)
+}
+
+
+
+
+
+
 package main
 
 import "fmt"
