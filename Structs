@@ -10,6 +10,12 @@ type Doctor struct {
 	degrees []string // data type : slice
 }
 
+type Doc struct {
+	id   int
+	name string
+}
+
+
 func main() {
 	doctor_Muakkir := Doctor{
 		id:   3011146,
@@ -22,4 +28,68 @@ func main() {
 	}
 
 	fmt.Println(doctor_Muakkir)
+	
+	p1 := Doc{12, "Sabbir"}
+	fmt.Println(p1)
+	fmt.Println(p1.name)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// Using of pointers for modifying the values
+// pass by reference 
+
+package main
+
+import "fmt"
+
+type Person struct {
+	id   int
+	name string
+}
+
+func change_name(p1 *Person) {
+	p1.name = "Ador"
+}
+
+func main() {
+	p1 := &Person{10, "Sabbir"}
+	fmt.Println(p1.name)
+	change_name(p1)
+	fmt.Println(p1.name)
+
+}
+
+
+
+
+// Embeded Struct 
+package main
+
+import "fmt"
+
+type Center_value struct {
+	x int
+	y int
+}
+
+type Circle struct {
+	radius float64
+	center *Center_value
+}
+
+func main() {
+
+	c1 := Circle{3.4, &Center_value{2, 3}}
+	fmt.Println(c1.center.x)
+
 }
