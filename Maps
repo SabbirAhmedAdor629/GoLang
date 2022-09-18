@@ -20,7 +20,7 @@ func main() {
 	fmt.Println(m)
 	fmt.Println(sabbir["university"])
 
-	// if we arent sure that the key is available at the map or not        
+	// if we arent sure that the key is available at the map or not then we can use ok to check       
 	pop, ok := sabbir["ahmed"]
 	fmt.Println(pop, ok)
 
