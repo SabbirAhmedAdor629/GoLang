@@ -72,7 +72,8 @@ func main() {
 
 
 
-// Embeded Struct 
+// Embeded Struct  (similar to inheritance)
+
 package main
 
 import "fmt"
@@ -92,4 +93,48 @@ func main() {
 	c1 := Circle{3.4, &Center_value{2, 3}}
 	fmt.Println(c1.center.x)
 
+}
+
+
+// Another way 
+
+import "fmt"
+
+type Animal struct {
+	name   string
+	origin string
+}
+
+type Bird struct {
+	Animal
+	speed   float32
+	can_fly string
+}
+
+func main() {
+	var b1 Bird = Bird{}
+	b1.name = "riad"
+	b1.origin = "naogaon"
+	b1.speed = 0.02
+	b1.can_fly = "YES"
+	fmt.Println(b1)
+}
+
+
+
+
+
+
+// Passing struct
+
+package main
+
+import "fmt"
+
+func main() {
+	aDoctor := struct{ name string }{name: "Sabbir"}
+	bDoctor := &aDoctor		// Using pointer while passing the struct 
+	bDoctor.name = "Ador"
+	fmt.Println(aDoctor)
+	fmt.Println(bDoctor)
 }
