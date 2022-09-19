@@ -1,0 +1,23 @@
+// like the if statement the first cases of the switch match the one which will execute
+
+
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	switch i := 2 + 1; i {
+	case 1:
+		fmt.Println("ONE")        // break statement is implicit in go we can use fallthrough (which is logicless) if we definately want to execute the next statement
+	case 2:
+		fmt.Println("TWO")
+	case 3:
+		fmt.Println("Three")
+	default:
+		fmt.Println("None of them")
+	}
+}
