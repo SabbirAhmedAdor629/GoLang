@@ -5,6 +5,47 @@ package main
 import "fmt"
 
 type Doctor struct {
+	Doc
+	degrees []string // data type : slice
+}
+
+type Doc struct {
+	id   int
+	name string
+}
+
+func main() {
+	doctor_Muakkir := Doctor{}
+
+	doctor_Muakkir.id = 32212
+	doctor_Muakkir.name = "Muakkir"
+	doctor_Muakkir.degrees = []string{"fcps", "ms", "frcp"}
+
+	fmt.Println(doctor_Muakkir)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Another way
+package main
+
+import "fmt"
+
+type Doctor struct {
 	id      int      // data type : integer
 	name    string   // data type : string
 	degrees []string // data type : slice
