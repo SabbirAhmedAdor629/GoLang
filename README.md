@@ -11,3 +11,5 @@ https://www.youtube.com/watch?v=JoJ8Sw5Yb4c&list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOn
 https://gobyexample.com/ (by official website of go)
 
 https://go.dev/tour/welcome/1 (by official website of go)
+
+https://gosamples.dev/random-string/ ( website )
